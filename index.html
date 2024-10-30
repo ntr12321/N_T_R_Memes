@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Button Layout</title>
+    <script>
+        function snap(){
+        window.location.href="https://www.snapchat.com/add/naakutelugu_r21?share_id=swv9XXmzerE&locale=en-US"
+        }
+
+        function WhatsApp(){
+        window.location.href="https://whatsapp.com/channel/0029Vau3eHpBadmTIXIe4O40"
+
+        }
+
+        function Telegram(){
+        window.location.href="https://t.me/naakuteluguraadhu"
+        }
+    </script>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #page {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #pageimage {
+            width: 80%; /* Adjust for smaller screens */
+            max-width: 300px; /* Prevent it from becoming too large */
+        }
+
+        #name {
+            color: white;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .image {
+            width: 80%; /* Adjust for smaller screens */
+            max-width: 300px; /* Prevent it from becoming too large */
+        }
+
+        .button {
+            background-color: #FFFC00; /* Default color for buttons */
+            color: #111;
+            font-size: 1.2em;
+            font-weight: bold;
+            
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(255, 252, 0, 0.3);
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        #watbtn {
+            background-color: greenyellow; /* WhatsApp button color */
+        }
+
+        #telbtn {
+            background-color: rgb(37, 170, 252); /* Telegram button color */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            #pageimage, .image {
+                width: 90%;
+            }
+
+            #name {
+                font-size: 1.2em;
+            }
+
+            .button {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #name {
+                font-size: 1em;
+            }
+
+            .button {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <img src="page.jpg" alt="Random Image" id="pageimage">
+        <h1 id="name">NAAKU_TELUGU_RAADHU MEMES</h1>
+    </div>
+
+    <div class="container" id="scroll">
+        <img src="Scroll.jpg" alt="Scroll Image" class="image">
+    </div>
+
+    <div class="container" id="snapchat">
+        <img src="Snap.jpg" alt="Snapchat" class="image">
+        <button type="button" class="button" id="snapbtn" onclick="snap()">Snapchat Link</button>
+    </div>
+
+    <div class="container" id="whatsapp">
+        <img src="channel.jpg" alt="WhatsApp" class="image">
+        <button type="button" class="button" id="watbtn" onclick="WhatsApp()">WhatsApp Channel</button>
+    </div>
+
+    <div class="container" id="telegram">
+        <img src="Telegram.jpg" alt="Telegram" class="image">
+        <button type="button" class="button" id="telbtn" onclick="Telegram()">Telegram Channel</button>
+    </div>
+
+    <div class="container" id="Thanks">
+        <img src="Thanks.jpg" alt="Thanks" class="image">
+    </div>
+</body>
+</html>
